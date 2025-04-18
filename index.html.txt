@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contigo todo es mejor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #2e1a47);
+            color: white;
+            overflow-x: hidden;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #2e1a47; }
+        ::-webkit-scrollbar-thumb { background: #800080; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a020f0; }
+
+        /* Fade-in sections */
+        .section {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background: rgba(48, 18, 36, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            border: 2px solid #fff;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .section:nth-child(odd) { animation-delay: 0.3s; }
+        .section:nth-child(even) { animation-delay: 0.6s; }
+
+        h1, h2 {
+            color: #fff;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 20px;
+        }
+        h2::before { content: '💖'; margin-right: 8px; }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            padding-left: 16px;
+            border-left: 4px solid #fbb6ce;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .highlight { color: #fbb6ce; }
+
+        .decor, .cin-bg { background-attachment: fixed; }
+        .decor {
+            position: fixed; top:0; left:0;
+            width:100%; height:100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="white" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+            background-size: 50px;
+            background-repeat: repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        .cin-bg {
+            position: fixed; top:0; left:0;
+            width:100%; height:100%;
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d9/Cinnamoroll_character.png');
+            background-size: 80px;
+            background-repeat: repeat;
+            opacity: 0.06;
+            z-index: -1;
+        }
+        .cin-icon {
+            position: absolute;
+            width: 120px;
+            opacity: 0.8;
+            z-index: 2;
+        }
+        .cin1 { top: 20px; left: 20px; }
+        .cin2 { bottom: 20px; right: 20px; }
+
+        #easter-heart {
+            position: fixed; bottom: 20px; left: 20px;
+            font-size: 32px; cursor: pointer; z-index: 2;
+        }
+        #easter-msg {
+            display: none;
+            position: fixed; bottom: 60px; left: 20px;
+            background: #800080; padding: 10px 15px;
+            border-radius: 10px; color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 2;
+        }
+
+        .content { position: relative; z-index: 1; }
+        @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <audio autoplay loop class="music">
+        <source src="https://dl.sndup.net/m4p8/PlayDateMelanieMartinez.mp3" type="audio/mpeg">
+    </audio>
+    <div class="cin-bg"></div>
+    <div class="decor"></div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Cinnamoroll_character.png" alt="Cinnamoroll" class="cin-icon cin1">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Cinnamoroll_character.png" alt="Cinnamoroll" class="cin-icon cin2">
+    <div id="easter-heart">❤️</div>
+    <div id="easter-msg">Mensaje secreto: <strong>Siempre tuyo, mi amor.</strong></div>
+    <div class="content">
+        <div class="section">
+            <h1>Contigo todo es mejor</h1>
+            <p>Desde que apareciste, todo cambió. Sentí algo que hacía años no sentía por nadie. Me empezaste a gustar sin siquiera intentar impresionarme, y eso fue lo más bonito. Me fui enamorando de ti con cada palabra, con cada risa, con cada detalle que descubrí de ti.</p>
+        </div>
+        <div class="section">
+            <h2>Desde el principio</h2>
+            <p>Conectamos como si ya nos conociéramos. Hablar contigo se volvió mi parte favorita del día, y sin darme cuenta, empecé a esperarte siempre. Tienes algo tan natural, tan tú, que sin pretenderlo hiciste que me enamorara.</p>
+        </div>
+        <div class="section">
+            <h2>Lo que siento por ti</h2>
+            <p>Estás en mi mente a cada rato, en mis pensamientos más bonitos y hasta en los más tontos. Me haces sentir tranquilo y feliz. Eres esa persona que me inspira, que me hace sonreír incluso en los días feos. Gracias a ti creo en lo bonito otra vez.</p>
+        </div>
+        <div class="section">
+            <h2>Eres increíble</h2>
+            <p>Me encanta cómo eres. Tu forma de pensar, de hablar, de emocionarte por lo que te gusta. Tienes una luz especial, algo que no puedo explicar pero que me encanta. Y yo solo quiero seguir conociéndote cada día más.</p>
+        </div>
+        <div class="section">
+            <h2>Lo que quiero contigo</h2>
+            <p>Quiero compartir todo contigo: risas, tonterías, metas, momentos bobos y también los importantes. Quiero ser ese apoyo constante, esa persona con quien puedas contar siempre. No estoy acá por un rato, estoy porque quiero quedarme.</p>
+        </div>
+        <div class="section">
+            <h2>Lo que imagino de nosotros</h2>
+            <p>Imagino abrazarte, salir contigo, compartir algo tan nuestro que el mundo se nos quede pequeño. Imagino que esto va a crecer, que vamos a vivir muchas cosas lindas, incluso con la distancia de por medio, porque lo que sentimos es fuerte.</p>
+        </div>
+        <div class="section footer">
+            <p>Mi amor 💜 gracias por existir, por cruzarte en mi vida, por hacerme sentir todo esto. Te quiero un montón, me haces feliz de una forma que no puedo explicar. Solo quiero seguir construyendo esto contigo, poquito a poco, a nuestro ritmo.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('easter-heart').addEventListener('click', function() {
+                var msg = document.getElementById('easter-msg');
+                msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+            });
+            window.addEventListener('scroll', function() {
+                document.querySelector('.cin-bg').style.backgroundPositionY = -(window.scrollY * 0.3) + 'px';
+                document.querySelector('.decor').style.backgroundPositionY = -(window.scrollY * 0.5) + 'px';
+            });
+            var confDone = false;
+            function isInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return rect.top < window.innerHeight && rect.bottom >= 0;
+            }
+            window.addEventListener('scroll', function(){
+                var footer = document.querySelector('.footer');
+                if(!confDone && isInViewport(footer)) {
+                    confDone = true;
+                    for(var i=0; i<50; i++) {
+                        (function() {
+                            var conf = document.createElement('div');
+                            conf.style.position = 'fixed';
+                            conf.style.background = ['#fbb6ce','#800080','#fff'][Math.floor(Math.random()*3)];
+                            conf.style.width = conf.style.height = '8px';
+                            conf.style.top = Math.random()*100 + '%';
+                            conf.style.left = Math.random()*100 + '%';
+                            conf.style.opacity = '0.8';
+                            conf.style.transform = 'rotate('+Math.random()*360+'deg)';
+                            conf.style.transition = '1s ease-out';
+                            document.body.appendChild(conf);
+                            setTimeout(function(){ conf.style.top = window.innerHeight+'px'; conf.style.opacity = '0'; }, 50);
+                            setTimeout(function(){ document.body.removeChild(conf); }, 2000);
+                        })();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
